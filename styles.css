@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    /* ### Primary */
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    /* ### Neutral */
+    --Darkgray: hsl(0, 0%, 59%);
+    /* font */
+    --font: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--Darkcyan);
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 375px;
+    box-shadow: 0px 1px 10px rgb(165, 160, 160);
+    border-radius: 10px;
+}
+
+.img-pattern {
+    height: 140px;
+}
+
+.img-pattern svg {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container-text img {
+    margin-top: -48px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0px 0px 13px 13px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 0.1px solid #f1f1f1;
+    width: 100%;
+}
+
+.presentation h2 {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.presentation h2 span {
+    font-weight: 400;
+    color: var(--Darkgray);
+    font-size: 18px;
+}
+
+.presentation p {
+    margin: 0;
+    padding-top: -10rem;
+    font-weight: 400;
+    color: var(--Darkgray);
+    padding-bottom: 2rem;
+    font-size: 16px;
+}
+
+.staticstics {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.followers {
+    text-align: center;
+}
+
+.followers p:nth-child(1) {
+    font-weight: 700;
+}
+
+.followers p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Darkgray);
+}
+
+.likes {
+    text-align: center;
+}
+
+.likes p:nth-child(1) {
+    font-weight: 700;
+}
+
+.likes p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Darkgray);
+}
+
+.photos {
+    text-align: center;
+}
+
+.photos p:nth-child(1) {
+    font-weight: 700;
+}
+
+.photos p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Darkgray);
+}
